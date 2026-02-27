@@ -335,9 +335,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
-          <!-- <img class="mb-5" src="imgs/architecture.png"> -->
-          <embed src="imgs/architecture.pdf" width="500" height="375" type="application/pdf">
-
+          <img class="mb-5" src="imgs/architecture.png">
+          <!-- <embed src="imgs/architecture.pdf" width="500" height="375" type="application/pdf"> -->
           <p>
           <b>Overview of our teacher–student framework.</b> The teacher is a frozen MobileCLIP model with four RepMixer stages (Stage 4 uses spatial-only MHSA). The student shares the same backbone but replaces Stage 4 with a spatio-temporal RWKV block for efficient temporal reasoning. Spatial distillation is applied at Stages 1–3, while temporal distillation aligns the student’s current output at frame $T$ with the teacher’s future features at frame $T{+}1$. Masked recurrence within the spatio-temporal RWKV block (right) simulates occlusion and strengthens memory retention.
           </p>
@@ -509,6 +508,7 @@ url={https://openreview.net/forum?id=8zzfTSVds2}
 
   </body>
   </html>
+
 
 
 
