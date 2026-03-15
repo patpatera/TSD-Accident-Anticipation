@@ -347,6 +347,30 @@
 </section>
 <!-- End paper overview -->
 
+<!-- Paper contrib. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Contributions & Methodology</h2>
+        <div class="content has-text-justified">
+          <img class="mb-5" src="imgs/architecture.png">
+          <!-- <embed src="imgs/architecture.pdf" width="500" height="375" type="application/pdf"> -->
+          <p>
+           <ul>
+              <li><strong>Temporally Shifted Distillation Framework:</strong> Enables spatio-temporal learning from a frozen image-based teacher, which eliminates the need for a temporally aware teacher in video pre-training and makes the approach highly suitable for small datasets and low-resource settings.</li>
+              <li><strong>Lightweight Hybrid Student Architecture:</strong> Integrates RepMixer spatial encoding with a recurrent temporal module, RWKV, to provide efficient long-range video understanding with linear-time complexity.</li>
+              <li><strong>Mask-Aware Spatio-Temporal Module:</strong> Adapts the RWKV block into a window-based module that combines localized recurrence with a masked memory strategy, achieving robust temporal modeling under occlusion and partial observability.</li>
+              <li><strong>State-of-the-Art Real-Time Anticipation:</strong> Delivers top performance on real-world benchmarks while running efficiently on edge devices like the NVIDIA Jetson Orin Nano. The model is <b>3-7x smaller</b> than recent leading approaches yet achieves high anticipation performance on resource-constrained platforms.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper contrib  -->
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
